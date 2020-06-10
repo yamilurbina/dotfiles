@@ -5,13 +5,9 @@ filetype plugin indent on
 
 call plug#begin()
 Plug 'tpope/vim-sensible'
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
 Plug 'vim-airline/vim-airline'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'tpope/vim-endwise'
-Plug 'joukevandermaas/vim-ember-hbs'
-Plug 'fatih/vim-go'
 call plug#end()
 
 set number
