@@ -8,4 +8,5 @@ zplug "zsh-users/zsh-completions"
 
 zplug load
 
+export GPG_TTY=$(tty)
 . $(brew --prefix asdf)/asdf.sh
