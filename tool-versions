@@ -5,3 +5,5 @@ elixir 1.10.3
 erlang 22.3.4.1
 gcloud 295.0.0
 terraform 0.12.26
+kubectl 1.18.3
+minikube 1.11.0
