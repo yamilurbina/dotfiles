@@ -17,3 +17,6 @@ zplug load
 
 export GPG_TTY=$(tty)
 . $(brew --prefix asdf)/asdf.sh
+
+# aliases
+[[ -f ~/.aliases ]] && source ~/.aliases
