@@ -18,11 +18,6 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 call plug#end()
 
-" Syntastic Config
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 set completeopt-=preview
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -59,8 +54,6 @@ set autoindent
 set smartindent
 set showmatch
 set smarttab
-
-set guifont=Inconsolata:h15
 
 set cmdheight=2
 set updatetime=300

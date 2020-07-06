@@ -20,3 +20,6 @@ export GPG_TTY=$(tty)
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# set lang
+export LANG=en_US.UTF-8
