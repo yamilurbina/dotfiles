@@ -9,3 +9,4 @@ kubectl 1.18.3
 minikube 1.11.0
 helm 3.2.4
 golang 1.14.4
+ruby 2.7.1
