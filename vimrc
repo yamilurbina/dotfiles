@@ -12,18 +12,17 @@ Plug 'pbrisbin/vim-mkdir'
 Plug 'tpope/vim-endwise'
 Plug 'majutsushi/tagbar'
 Plug 'hashivim/vim-terraform'
-Plug 'vim-syntastic/syntastic'
 Plug 'juliosueiras/vim-terraform-completion'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 call plug#end()
 
+let NERDTreeShowHidden=1
 set completeopt-=preview
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-let g:syntastic_terraform_tffilter_plan = 1
 let g:terraform_completion_keys = 1
 let g:terraform_registry_module_completion = 0
 

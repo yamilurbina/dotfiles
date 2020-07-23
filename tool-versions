@@ -6,7 +6,8 @@ erlang 22.3.4.1
 gcloud 297.0.1
 terraform 0.12.28
 kubectl 1.18.3
-minikube 1.11.0
+minikube 1.12.1
 helm 3.2.4
 golang 1.14.4
 ruby 2.7.1
+doctl 1.46.0
