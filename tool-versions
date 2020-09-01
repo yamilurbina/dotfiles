@@ -1,13 +1,15 @@
 python 3.7.7
 nodejs 14.4.0
-java adopt-openjdk-11.0.6+10
+java adoptopenjdk-11.0.8+10.openj9-0.21.0
 elixir 1.10.3
 erlang 22.3.4.1
 gcloud 297.0.1
 terraform 0.12.28
 kubectl 1.18.3
-minikube 1.12.1
+minikube 1.12.3
 helm 3.2.4
 golang 1.14.4
 ruby 2.7.1
 doctl 1.46.0
+kustomize 3.8.2
+kubectx 0.9.1
