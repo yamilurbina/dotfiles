@@ -1,7 +1,7 @@
 python 3.7.7
 nodejs 14.4.0
 java adoptopenjdk-11.0.8+10.openj9-0.21.0
-elixir 1.10.3
+elixir 1.10.4-otp-23
 erlang 22.3.4.1
 gcloud 297.0.1
 terraform 0.12.28
