@@ -4,9 +4,9 @@ java adoptopenjdk-11.0.8+10.openj9-0.21.0
 elixir 1.10.4-otp-23
 erlang 22.3.4.1
 gcloud 297.0.1
-terraform 0.12.28
-kubectl 1.18.3
-minikube 1.12.3
+terraform 0.13.2
+kubectl 1.19.1
+minikube 1.13.0
 helm 3.2.4
 golang 1.14.4
 ruby 2.7.1
