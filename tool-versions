@@ -3,13 +3,14 @@ nodejs 14.9.0
 java adoptopenjdk-11.0.8+10.openj9-0.21.0
 elixir 1.10.4-otp-23
 erlang 22.3.4.1
-gcloud 297.0.1
+gcloud 309.0.0
 terraform 0.13.2
 kubectl 1.19.1
 minikube 1.13.0
-helm 3.2.4
+helm 3.3.1
 golang 1.14.4
 ruby 2.7.1
 doctl 1.46.0
 kustomize 3.8.2
 kubectx 0.9.1
+terraform-docs v0.10.0-rc.1
