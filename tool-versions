@@ -1,7 +1,7 @@
 python 3.7.7
-nodejs 14.9.0
+nodejs 10.20.1
 java adoptopenjdk-11.0.8+10.openj9-0.21.0
-elixir 1.10.4-otp-23
-erlang 22.3.4.1
+elixir 1.10.3
+erlang 23.1
 golang 1.14.4
 ruby 2.7.1
