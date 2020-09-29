@@ -15,6 +15,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'juliosueiras/vim-terraform-completion'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 let NERDTreeShowHidden=1
