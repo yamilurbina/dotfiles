@@ -28,3 +28,4 @@ export LANG=en_US.UTF-8
 
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+export PATH="/usr/local/sbin:$PATH"
