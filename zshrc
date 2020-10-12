@@ -5,7 +5,7 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=~/.zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug "zsh-users/zsh-syntax-highlighting"
@@ -18,7 +18,7 @@ zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 zplug load
 
 export GPG_TTY=$(tty)
-. $(brew --prefix asdf)/asdf.sh
+. /home/pirate/.asdf/asdf.sh
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
