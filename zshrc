@@ -29,3 +29,7 @@ export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 export PATH="/usr/local/sbin:$PATH"
+
+export ANDROID_HOME="/usr/local/share/android-sdk"
+export PATH=$ANDROID_HOME/emulator:$PATH
+export PATH=$PATH:$HOME/.arkade/bin/

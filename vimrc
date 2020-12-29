@@ -11,6 +11,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
 Plug 'elixir-editors/vim-elixir'
+Plug 'udalov/kotlin-vim'
 call plug#end()
 
 let NERDTreeShowHidden=1
