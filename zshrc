@@ -33,3 +33,4 @@ export PATH="/usr/local/sbin:$PATH"
 export ANDROID_HOME="/usr/local/share/android-sdk"
 export PATH=$ANDROID_HOME/emulator:$PATH
 export PATH=$PATH:$HOME/.arkade/bin/
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
