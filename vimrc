@@ -12,6 +12,7 @@ Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
 Plug 'elixir-editors/vim-elixir'
 Plug 'udalov/kotlin-vim'
+Plug 'sbdchd/neoformat'
 call plug#end()
 
 let NERDTreeShowHidden=1
