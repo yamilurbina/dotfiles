@@ -13,6 +13,7 @@ Plug 'godlygeek/tabular'
 Plug 'elixir-editors/vim-elixir'
 Plug 'udalov/kotlin-vim'
 Plug 'sbdchd/neoformat'
+Plug 'zxqfl/tabnine-vim'
 call plug#end()
 
 let NERDTreeShowHidden=1
