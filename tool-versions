@@ -3,6 +3,6 @@ nodejs 14.2.0
 java adoptopenjdk-11.0.8+10.openj9-0.21.0
 elixir 1.11.0
 erlang 23.1
-golang 1.15.6
+golang 1.15.8
 ruby 2.7.1
 yarn 1.22.10
