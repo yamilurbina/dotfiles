@@ -24,14 +24,12 @@ export GPG_TTY=$(tty)
 
 # set lang
 export LANG=en_US.UTF-8
-
-export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 export PATH="/usr/local/sbin:$PATH"
 
 export ANDROID_HOME="/usr/local/share/android-sdk"
 export PATH=$ANDROID_HOME/emulator:$PATH
-export PATH=$PATH:$HOME/.arkade/bin/
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
-export PATH="${PATH}:${HOME}/.krew/bin"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
