@@ -10,13 +10,14 @@ Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
-Plug 'elixir-editors/vim-elixir'
-Plug 'udalov/kotlin-vim'
-Plug 'sbdchd/neoformat'
 Plug 'zxqfl/tabnine-vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 let NERDTreeShowHidden=1
+let g:terraform_fmt_on_save=1
+let g:terraform_align=1
 set completeopt-=preview
 
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
