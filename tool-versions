@@ -1,2 +1,4 @@
 nodejs 15.14.0
 yarn 1.22.10
+terraform-lsp 0.0.10
+ruby 2.7.0

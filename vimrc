@@ -10,9 +10,9 @@ Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
-Plug 'zxqfl/tabnine-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'hashivim/vim-terraform'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 let NERDTreeShowHidden=1

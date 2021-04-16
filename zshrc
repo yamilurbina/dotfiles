@@ -16,9 +16,6 @@ zplug "dracula/zsh", as:theme
 
 zplug load
 
-export GPG_TTY=$(tty)
-. $(brew --prefix asdf)/asdf.sh
-
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
@@ -29,6 +26,9 @@ export PATH="/usr/local/sbin:$PATH"
 export ANDROID_HOME="/usr/local/share/android-sdk"
 export PATH=$ANDROID_HOME/emulator:$PATH
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+
+export GPG_TTY=$(tty)
+. $(brew --prefix asdf)/asdf.sh
 
 # tabtab source for packages
 # uninstall by removing these lines
