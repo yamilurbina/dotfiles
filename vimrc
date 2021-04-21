@@ -12,7 +12,6 @@ Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'hashivim/vim-terraform'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 let NERDTreeShowHidden=1
