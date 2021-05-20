@@ -12,7 +12,10 @@ Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'hashivim/vim-terraform'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+inoremap <silent><expr> <c-space> coc#refresh()
 
 let NERDTreeShowHidden=1
 let g:terraform_fmt_on_save=1
