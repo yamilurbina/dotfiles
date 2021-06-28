@@ -7,29 +7,22 @@ fi
 
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
+source ~/.asdf/plugins/java/set-java-home.zsh
 
-zplug "zsh-users/zsh-syntax-highlighting"
+zplug "dracula/zsh", as:theme
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
-zplug "dracula/zsh", as:theme
+zplug "zsh-users/zsh-syntax-highlighting"
 
 zplug load
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
-# set lang
 export LANG=en_US.UTF-8
 export PATH="/usr/local/sbin:$PATH"
-
-export ANDROID_HOME="/usr/local/share/android-sdk"
-export PATH=$ANDROID_HOME/emulator:$PATH
-export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
-
+export AWS_VAULT_BACKEND=file
 export GPG_TTY=$(tty)
+export DOCKER_BUILDKIT=1
 . $(brew --prefix asdf)/asdf.sh
-
-# tabtab source for packages
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
