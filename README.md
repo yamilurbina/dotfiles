@@ -1,6 +1,6 @@
-# My dotfiles
+# My dotfiles
 
-## Setup
+## Setup
 
 Install Packer first:
 
@@ -11,4 +11,3 @@ Then clone the Dracula theme for oh-my-zsh:
 
     git clone https://github.com/dracula/zsh.git \
     ~/.local/share/zsh/themes/dracula
-
