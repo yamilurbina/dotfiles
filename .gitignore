@@ -1,0 +1,26 @@
+# .gitignore for LazyVim
+
+# Ignore Neovim swap files
+*.swp
+*.swo
+
+# Ignore Neovim backup files
+*.bak
+*.tmp
+
+# Ignore Neovim undo files
+*.un~
+
+# Ignore LazyVim specific files
+lazy-lock.json
+
+# Ignore node_modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
