@@ -33,3 +33,6 @@ alias ls='eza -lh --group-directories-first --icons=auto'
 
 # Zellij
 eval "$(zellij setup --generate-auto-start zsh)"
+
+# 1Password
+[ -f ~/.config/op/plugins.sh ] && source ~/.config/op/plugins.sh
