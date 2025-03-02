@@ -12,9 +12,11 @@ zinit light dracula/zsh
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/history-search-multi-word
 zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light zsh-users/zsh-completions
 
 # Dracula
 DRACULA_DISPLAY_FULL_CWD=1
+DRACULA_DISPLAY_NEW_LINE=1
 
 # History
 HISTFILE=~/.history

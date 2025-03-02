@@ -3,7 +3,9 @@
     "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.ai.copilot-chat",
     "lazyvim.plugins.extras.editor.fzf",
-    "lazyvim.plugins.extras.editor.neo-tree"
+    "lazyvim.plugins.extras.editor.neo-tree",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.ruby"
   ],
   "install_version": 8,
   "news": {
