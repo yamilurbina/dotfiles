@@ -1,4 +1,10 @@
 [tools]
+hcloud = "latest"
+helm = "latest"
+kubectl = "latest"
+kustomize = "latest"
 node = "lts"
 python = "latest"
 ruby = "latest"
+terraform = "latest"
+terraform-docs = "latest"
