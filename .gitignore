@@ -4,6 +4,15 @@
 **/*.local
 Brewfile.local
 
+# Defensive patterns in case secrets are ever dropped inside the repo
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/id_rsa*
+**/id_ed25519*
+**/id_ecdsa*
+
 # Generated noise
 .DS_Store
 *.bak.*

@@ -14,6 +14,7 @@ setopt share_history
 setopt inc_append_history
 setopt hist_ignore_dups
 setopt hist_reduce_blanks
+setopt hist_ignore_space
 
 # -----------------------------------------------------------------------------
 # Plugins that must load before compinit
@@ -55,10 +56,6 @@ eval "$(zoxide init zsh)"
 
 # mise: activate tools pinned in mise.toml (e.g. terraform) for each directory
 eval "$(mise activate zsh)"
-
-# 1Password CLI shell plugins (e.g. gh authentication via 1Password)
-# Guarded because the file is created by `op plugin init gh`.
-[[ -f "$HOME/.config/op/plugins.sh" ]] && source "$HOME/.config/op/plugins.sh"
 
 # -----------------------------------------------------------------------------
 # Dracula prompt theme (loaded last so it can wrap zle widgets)
