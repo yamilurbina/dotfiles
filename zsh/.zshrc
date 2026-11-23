@@ -9,9 +9,15 @@ if [[ -z ${HOMEBREW_PREFIX:-} ]]; then
     fi
   done
 fi
-# Non-login shells don't inherit .zprofile's PATH additions.
+# Login shells get Homebrew's bin from /etc/zprofile via path_helper; add it for
+# non-login shells too, without duplicating it.
 if [[ -n ${HOMEBREW_PREFIX:-} && ":$PATH:" != *":$HOMEBREW_PREFIX/bin:"* ]]; then
   export PATH="$HOMEBREW_PREFIX/bin:$PATH"
+fi
+if [[ -n ${HOMEBREW_PREFIX:-} ]]; then
+  export HOMEBREW_CELLAR="$HOMEBREW_PREFIX/Cellar"
+  export HOMEBREW_REPOSITORY="$HOMEBREW_PREFIX"
+  fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
 fi
 
 # -----------------------------------------------------------------------------
@@ -74,6 +80,9 @@ eval "$(mise activate zsh)"
 # 1Password CLI shell plugins (e.g. gh authentication via 1Password)
 # Guarded because the file is created by `op plugin init gh`.
 [[ -f "$HOME/.config/op/plugins.sh" ]] && source "$HOME/.config/op/plugins.sh"
+
+# OrbStack: Linux VM integration, binaries and completion functions.
+[[ -f "$HOME/.orbstack/shell/init.zsh" ]] && source "$HOME/.orbstack/shell/init.zsh"
 
 # -----------------------------------------------------------------------------
 # Dracula prompt theme (loaded last so it can wrap zle widgets)
