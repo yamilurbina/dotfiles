@@ -2,6 +2,7 @@
 **/service.json
 **/.gitconfig.local
 **/*.local
+Brewfile.local
 
 # Generated noise
 .DS_Store

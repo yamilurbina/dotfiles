@@ -27,7 +27,37 @@ Re-link after edits with `stow -R <package>`, and undo with `stow -D <package>`.
 | `gh` | `~/.config/gh/` |
 | `opencode` | `~/.config/opencode/cli.json` |
 
-`Brewfile` is documentation only; install with `brew bundle`.
+## Homebrew
+
+`Brewfile` is the tracked, shared package list. Keep it in sync with:
+
+```sh
+brew bundle add --file ~/.dotfiles/Brewfile <formula>          # --cask for apps
+brew bundle remove --file ~/.dotfiles/Brewfile <name>
+brew bundle dump --force --file ~/.dotfiles/Brewfile           # full snapshot
+```
+
+Commit the resulting diff. `dump` rewrites the whole file, so if you have
+machine-local packages installed, prefer `add`/`remove` for targeted edits, or
+prune local-only lines after a dump.
+
+Machine-only packages go in untracked `~/.Brewfile.local`:
+
+```sh
+brew bundle add --file ~/.Brewfile.local <formula>             # --cask for apps
+```
+
+On a fresh machine:
+
+```sh
+brew bundle install --file ~/.dotfiles/Brewfile
+[[ -f ~/.Brewfile.local ]] && brew bundle install --file ~/.Brewfile.local
+```
+
+Check drift with `brew bundle check --file ~/.dotfiles/Brewfile`. Avoid
+`brew bundle cleanup` with just one of the two files — it would propose
+removing packages listed in the other. Use `brew uninstall` / `brew autoremove`
+for removals instead.
 
 ## Notes
 
