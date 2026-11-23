@@ -42,5 +42,3 @@ cask "font-ibm-plex-mono"
 cask "ghostty"
 # Replacement for Docker Desktop
 cask "orbstack"
-# Mesh VPN based on WireGuard
-cask "tailscale-app"
