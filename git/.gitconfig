@@ -1,17 +1,12 @@
-[user]
-	name = Yamil Urbina
-	email = hello@yamilurbina.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPp37waiAF+0BSewDc8/0P+eDelyNksEcvq7BcsgB64R
-
 [commit]
 	gpgsign = true
 
 [gpg]
 	format = ssh
 
-[gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
-	allowedSignersFile = /Users/yamilurbina/.ssh/allowed_signers
-
 [init]
 	defaultBranch = main
+
+# Machine-specific identity and signing paths live here (not tracked).
+[include]
+	path = ~/.gitconfig.local

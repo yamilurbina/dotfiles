@@ -31,12 +31,16 @@ Re-link after edits with `stow -R <package>`, and undo with `stow -D <package>`.
 
 ## Notes
 
-- These are **Phase 1** configs: tracked as-is, tied to this Mac. Absolute paths such
-  as `/opt/homebrew`, `/Applications/1Password.app`, and
-  `/Users/yamilurbina/.ssh/allowed_signers` are intentional.
+- Homebrew paths are resolved via `$HOMEBREW_PREFIX`, inherited from `~/.zprofile`
+  in login shells and discovered from `/opt/homebrew/bin/brew` or
+  `/usr/local/bin/brew` otherwise. This works on both Apple Silicon and Intel Macs.
+- Machine-specific git settings (identity, signing key, 1Password signer path,
+  allowed-signers file) live in untracked `~/.gitconfig.local`, included at the end
+  of the tracked `~/.gitconfig`. Create that file on each new machine.
+- `templates/ssh-config` is a starting point for `~/.ssh/config`; copy and edit it
+  locally. `~/.ssh` itself is never stowed.
+- `~/.zprofile` is intentionally unchanged: it is the only source of Homebrew's
+  `fpath` additions and OrbStack completions.
 - Deliberately **not** tracked: `~/.ssh/`, `~/.config/op/`,
   `~/.config/opencode/service.json` (contains a password), shell history,
   `.zcompdump`, `.zsh_sessions/`, OrbStack/Kube/Terraform/Docker state, and backups.
-- Phase 2 (only if using a second machine): switch Homebrew paths to
-  `$(brew --prefix)`, move machine-specific git settings into `~/.gitconfig.local`,
-  and keep `ssh/config` as a local-only file.

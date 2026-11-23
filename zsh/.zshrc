@@ -1,7 +1,23 @@
 # -----------------------------------------------------------------------------
+# Homebrew prefix (inherited from .zprofile in login shells, discovered otherwise)
+# -----------------------------------------------------------------------------
+if [[ -z ${HOMEBREW_PREFIX:-} ]]; then
+  for _brew in /opt/homebrew/bin/brew /usr/local/bin/brew; do
+    if [[ -x $_brew ]]; then
+      HOMEBREW_PREFIX=$($_brew --prefix)
+      break
+    fi
+  done
+fi
+# Non-login shells don't inherit .zprofile's PATH additions.
+if [[ -n ${HOMEBREW_PREFIX:-} && ":$PATH:" != *":$HOMEBREW_PREFIX/bin:"* ]]; then
+  export PATH="$HOMEBREW_PREFIX/bin:$PATH"
+fi
+
+# -----------------------------------------------------------------------------
 # Zinit (installed via Homebrew)
 # -----------------------------------------------------------------------------
-source /opt/homebrew/opt/zinit/zinit.zsh
+source "$HOMEBREW_PREFIX/opt/zinit/zinit.zsh"
 
 # -----------------------------------------------------------------------------
 # History
@@ -47,7 +63,7 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 # We deliberately skip fzf's completion.zsh, which binds Tab, so fzf-tab owns Tab.
 # fzf 0.75's script tries to restore the read-only `zle` option on macOS zsh 5.9;
 # that warning is harmless, so silence it here.
-source /opt/homebrew/opt/fzf/shell/key-bindings.zsh 2>/dev/null
+source "$HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.zsh" 2>/dev/null
 
 # zoxide: z <pattern> for smart directory jumping
 eval "$(zoxide init zsh)"

@@ -1,0 +1,11 @@
+# Template for ~/.ssh/config — copy to ~/.ssh/config and fill in per machine.
+# Intentionally NOT managed by Stow: ~/.ssh holds private keys and agent sockets.
+
+# OrbStack's Linux integration, if used, must be included above any Host blocks.
+# macOS example:
+# Include ~/.orbstack/ssh/config
+
+Host *
+  # macOS / 1Password example:
+  # IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+  IdentityAgent "<path to 1Password SSH agent socket>"
