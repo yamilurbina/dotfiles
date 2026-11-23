@@ -1,0 +1,4 @@
+# Dracula theme (see ~/.config/ghostty/themes/dracula)
+theme = dracula
+font-family = IBM Plex Mono
+font-size = 14

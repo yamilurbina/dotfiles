@@ -1,0 +1,9 @@
+# Secrets and machine-local overrides
+**/service.json
+**/.gitconfig.local
+**/*.local
+
+# Generated noise
+.DS_Store
+*.bak.*
+Brewfile.lock.json

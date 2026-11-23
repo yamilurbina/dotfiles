@@ -1,0 +1,82 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "color": {
+      "1": "#bd93f9",
+      "2": "#50fa7b",
+      "3": "#f1fa8c",
+      "4": "#8be9fd",
+      "5": "#bd93f9",
+      "6": "#ff79c6"
+    }
+  },
+  "display": {
+    "color": {
+      "keys": "#bd93f9",
+      "title": "#ff79c6",
+      "output": "#f8f8f2",
+      "separator": "#6272a4"
+    },
+    "brightColor": false,
+    "key": {
+      "width": 14
+    },
+    "separator": ": ",
+    "percent": {
+      "color": {
+        "green": "#50fa7b",
+        "yellow": "#f1fa8c",
+        "red": "#ff5555"
+      }
+    },
+    "temp": {
+      "color": {
+        "green": "#50fa7b",
+        "yellow": "#f1fa8c",
+        "red": "#ff5555"
+      }
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "─"
+      },
+      "border": {
+        "left": "[",
+        "right": "]"
+      },
+      "color": {
+        "total": "#44475a",
+        "border": "#6272a4"
+      }
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "wm",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "locale",
+    "break",
+    "colors"
+  ]
+}
