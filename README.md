@@ -31,11 +31,10 @@ Re-link after edits with `stow -R <package>`, and undo with `stow -D <package>`.
 
 ## Notes
 
-- There is no `~/.zprofile`; all zsh setup lives in `~/.zshrc`. Homebrew's prefix is
-  inherited from the environment when available, otherwise discovered from
-  `/opt/homebrew/bin/brew` or `/usr/local/bin/brew`, so this works on both Apple
-  Silicon and Intel Macs. Homebrew's env vars, `bin` path, and completion `fpath`
-  are set there, as is the guarded OrbStack integration.
+- There is no `~/.zprofile`; all zsh setup lives in `~/.zshrc`. Homebrew must already
+  be installed and on `PATH` — paths come from `brew --prefix`, so Apple Silicon and
+  Intel Macs both work. Homebrew's `shellenv` and OrbStack shell integration are
+  machine setup, handled outside these dotfiles.
 - Machine-specific git settings (identity, signing key, 1Password signer path,
   allowed-signers file) live in untracked `~/.gitconfig.local`, included at the end
   of the tracked `~/.gitconfig`. Create that file on each new machine.
